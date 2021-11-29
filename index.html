@@ -6,8 +6,10 @@
   <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
 </head>
 <body class="page">
-  <div class="header-container"><img class="header-img" src="./eisenhower-matrix.jpg"><a class="header-link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a></div>
-  <div class="main-container">
+  <header class="header">
+    <div class="header-container"><img class="header-img" src="./eisenhower-matrix.jpg"><a class="header-link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a></div>
+  </header>
+  <main class="main-container">
     <p id="add-new-tast"><label class="label-text label-item" for="new-task">Add Item</label>
       <div class="task-row-wrapper"><input id="new-task" 
           class="task input-text input-item" 
@@ -26,7 +28,7 @@
     <ul class="list"  id="completed-tasks">
       <li class="list-item"><input class="item-checkbox input-item" type="checkbox" checked><label class="task label-item">See the Doctor</label><input type="text" class="task input-text input-item"><button class="edit button">Edit</button><button class="delete button"><img class="remove-image" src="./remove.svg"></button></li>
     </ul>
-  </div>
+  </main>
   <script src="app.js"></script>
 </body>
 </html>
