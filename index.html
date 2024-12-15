@@ -7,27 +7,60 @@
 </head>
 <body class="page">
   <header class="header">
-    <div class="header-container"><img class="header-img" src="./eisenhower-matrix.jpg" alt="Priority matrix"><a class="header-link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a></div>
+    <div class="header__container">
+      <img class="header__img" src="./eisenhower-matrix.jpg" alt="Priority matrix">
+      <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+    </div>
   </header>
-  <main class="main-container">
-    <p id="add-new-tast"><label class="label-text label-item" for="new-task">Add Item</label>
-      <div class="task-row-wrapper"><input id="new-task" 
-          class="task input-text input-item" 
-          type="text"><button class="button">Add</button>
+  <main class="main">
+    <section id="add-new-tast" class="content">
+      <h3 class="content__title content__title_add">Add Item</h3>
+      <div class="content__task_wrapper">
+        <input id="new-task" 
+          class="content__input_text" 
+          type="text">
+          <button class="content__button">Add</button>
       </div>
-    </p>
-    <h3 class="title" >Todo</h3>
-    <ul class="list" id="incompleted-tasks">
-      <li class="list-item" ><input class="item-checkbox input-item" type="checkbox"><label class="task label-item">Pay Bills</label><input type="text" class="task input-text"><button class="edit button">Edit</button><button class="delete button"><img class="remove-image" src="./remove.svg" alt="cross in arrow"></button></li>
-      <li class="edit-mode list-item"><input class="item-checkbox input-item" type="checkbox"><label class="task label-item">Go Shopping</label><input type="text" 
-          value="Go Shopping" 
-          class="task input-text input-item"><button class="edit button">Save</button><button class="delete button"><img class="remove-image" src="./remove.svg" alt="cross in arrow"></button>
-      </li>
-    </ul>
-    <h3 class="title" >Completed</h3>
-    <ul class="list"  id="completed-tasks">
-      <li class="list-item"><input class="item-checkbox input-item" type="checkbox" checked><label class="task label-item">See the Doctor</label><input type="text" class="task input-text input-item"><button class="edit button">Edit</button><button class="delete button"><img class="remove-image" src="./remove.svg" alt="cross in arrow"></button></li>
-    </ul>
+    </section>
+    <section class="content">
+      <h3 class="content__title">Todo</h3>
+      <ul class="content__list" id="incompleted-tasks">
+        <li class="content__list_item" >
+          <input class="content__list_input-checkbox" type="checkbox">
+          <label class="content__list_label">Pay Bills</label>
+          <input type="text" class="content__input_text">
+          <button class="content__button_edit content__button">Edit</button>
+          <button class="content__button_delete content__button">
+            <img class="content__image_remove" src="./remove.svg" alt="cross in arrow">
+          </button>
+        </li>
+        <li class="content__edit_mode content__list_item">
+          <input class="content__list_input-checkbox" type="checkbox">
+          <label class="content__list_label">Go Shopping</label>
+          <input type="text" 
+            value="Go Shopping" 
+            class="content__input_text">
+            <button class="content__button_edit content__button">Save</button>
+            <button class="content__button_delete content__button">
+              <img class="content__image_remove" src="./remove.svg" alt="cross in arrow">
+            </button>
+        </li>
+      </ul>
+    </section>
+    <section class="content">
+      <h3 class="content__title" >Completed</h3>
+      <ul class="content__list"  id="completed-tasks">
+        <li class="content__list_item">
+          <input class="content__list_input-checkbox" type="checkbox" checked>
+          <label class="content__list_label">See the Doctor</label>
+          <input type="text" class="content__input_text">
+          <button class="content__button_edit content__button">Edit</button>
+          <button class="content__button_delete content__button">
+            <img class="content__image_remove" src="./remove.svg" alt="cross in arrow">
+          </button>
+        </li>
+      </ul>
+    </section>
   </main>
   <script src="app.js"></script>
 </body>
